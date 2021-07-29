@@ -1,0 +1,33 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__info>p {
+    color: hsl(228, 34%, 66%);
+    font-weight: 600;
+}
+
+.header__darkmode {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 430px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__darkmode {
+        margin-top: 0.5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header__info {
+        width: 100%;
+    }
+    .header__info>h1 {
+        font-size: 24px;
+    }
+}
